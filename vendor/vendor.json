@@ -1,0 +1,12 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "0Q9j3oEkDjNqvWxpELe1cXfeBSE=",
+			"path": "github.com/mndrix/tap-go",
+			"revision": ""
+		}
+	],
+	"rootPath": "github.com/liangchenye/oci-cert-demo"
+}
