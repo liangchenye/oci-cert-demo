@@ -12,4 +12,6 @@ install: true
 script:
   - make
   - prove ./ok > ok.txt
-  - prove ./fail > fail.txt
+  - prove ./fail > fail.txt ; echo "force success"
+  - curl -X POST -F file=@ok.txt ocihub.org:8080/oct/oci-cert-demo-ok
+  - curl -X POST -F file=@fail.txt ocihub.org:8080/oct/oci-cert-demo-fail
