@@ -1,0 +1,15 @@
+language: go
+go:
+  - 1.9.x
+
+sudo: false
+
+before_install:
+  - go get github.com/golang/lint/golint
+
+install: true
+
+script:
+  - make
+  - prove ./ok > ok.txt
+  - prove ./fail > fail.txt
